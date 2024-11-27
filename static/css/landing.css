@@ -1,0 +1,177 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login, .btn-register {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-login {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-register {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.feature-card {
+    text-align: center;
+    width: 300px;
+}
+
+.feature-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Impact Section */
+.impact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+/* Footer */
+.landing-footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-nav {
+        padding: 1rem 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+} 

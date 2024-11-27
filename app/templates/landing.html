@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <nav class="landing-nav">
+        <div class="logo">
+            <h1>Conexión Solidaria</h1>
+        </div>
+        <div class="nav-buttons">
+            <a href="{{ url_for('auth.login') }}" class="btn-login">Iniciar Sesión</a>
+            <a href="{{ url_for('auth.register') }}" class="btn-register">Registrarse</a>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h2>Juntos Podemos Hacer la Diferencia</h2>
+        <p class="hero-text">Conectamos corazones generosos con causas que transforman vidas</p>
+        <a href="{{ url_for('auth.register') }}" class="cta-button">Únete Ahora</a>
+    </div>
+</div>
+
+<section class="features">
+    <div class="feature-card">
+        <img src="{{ url_for('static', filename='images/donate.jpg') }}" alt="Donaciones">
+        <h3>Dona</h3>
+        <p>Apoya proyectos que cambian vidas con donaciones seguras y transparentes</p>
+    </div>
+    <div class="feature-card">
+        <img src="{{ url_for('static', filename='images/volunteer.jpg') }}" alt="Voluntariado">
+        <h3>Voluntariado</h3>
+        <p>Ofrece tu tiempo y habilidades para hacer un impacto real en tu comunidad</p>
+    </div>
+    <div class="feature-card">
+        <img src="{{ url_for('static', filename='images/organize.jpg') }}" alt="Organizaciones">
+        <h3>Organiza</h3>
+        <p>Gestiona proyectos sociales y conecta con personas comprometidas</p>
+    </div>
+</section>
+
+<section class="impact">
+    <h2>Nuestro Impacto</h2>
+    <div class="impact-stats">
+        <div class="stat">
+            <h3>1,000+</h3>
+            <p>Donantes Activos</p>
+        </div>
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Organizaciones</p>
+        </div>
+        <div class="stat">
+            <h3>100+</h3>
+            <p>Proyectos Exitosos</p>
+        </div>
+    </div>
+</section>
+
+<footer class="landing-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Conexión Solidaria</h4>
+            <p>Transformando vidas a través de la solidaridad</p>
+        </div>
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#how-it-works">Cómo Funciona</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Conexión Solidaria. Todos los derechos reservados.</p>
+    </div>
+</footer>
+{% endblock %} 
